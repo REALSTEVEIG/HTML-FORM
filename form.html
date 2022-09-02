@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div, form, label {
+            background-color: aqua;
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="/html/picture2.jpg" method="GET">
+          <div>
+            <label for="username">USERNAME</label><br><br>
+            <input type="text" name="username" id="username" required>
+          </div><br><br>
+
+           <div>
+            <label for="email">EMAIL</label><br><br>
+            <input type="email" name="email" id="email">
+           </div><br><br>
+
+           <div>
+            <label for="password">PASSWORD</label><br><br>
+            <input type="password" name="password" id="password">
+           </div><br><br>
+
+           <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">MALE</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">FEMALE</label>
+        </div> <br><br>
+
+        <div>
+            <input type="checkbox" name="skills" id="html" value="html">
+            <label for="html">PYTHON</label>
+            <input type="checkbox" name="skills" value="css" id="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="skills" id="javascript" value="javascript">
+            <label for="javascript">Javascript</label>
+        </div><br><br>
+
+        <div>
+            <label for="file">File</label>
+            <input id="file" type="file" name="picture">
+        </div> <br><br>
+
+
+        <div>
+            <label for="hobbies">Hobbies</label>
+            <select name="hobbies" id="hobbies">
+                <option value="coding">Coding</option>
+                <option label="Cooking" value="Cooking"></option>
+                <option label="Sleeping" value="Sleeping"></option>
+            </select>
+        </div><br><br>
+
+        <div>
+            <label for="date">Date of birth</label>
+            <input type="date" name="date" id="date">
+        </div><br><br>
+
+            <button type="submit">SUBMIT</button>
+            <button type="reset">RESET</button>
+        </form>
+        
+    </div>
+</body>
+</html>
